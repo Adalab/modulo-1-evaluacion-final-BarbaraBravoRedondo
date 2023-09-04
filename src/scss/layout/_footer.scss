@@ -18,86 +18,86 @@
   &__button:hover {
     animation: pulse 1.5s ease-in-out;
 
-  @keyframes pulser{
-    0% {
-      transform: scale(1);
-      background-color: $color-white;
-      opacity: 1;
+    @keyframes pulser {
+      0% {
+        transform: scale(1);
+        background-color: $color-white;
+        opacity: 1;
+      }
+      25% {
+        background-color: rgb(230, 218, 173);
+        opacity: 0.7;
+        transform: scale(3);
+      }
+      50% {
+        background-color: green;
+        opacity: 0.7;
+      }
+      100% {
+        background-color: yellow;
+        opacity: 1;
+        transform: scale(1, 2, 5);
+      }
     }
-    25% {
-      background-color: rgb(230, 218, 173);
-      opacity: 0.7;
-      transform: scale(3);
-      box-shadow: 0 0 0 50px rgba(#d4be5a, 0);
-    }
-    50% {
-      background-color: green;
-      opacity: 0.7;
-    }
-    100% {
-      background-color: yellow;
-      opacity: 1;
-      transform: scale(1, 2, 5);
-    box-shadow: 0 0 0 0 rgba(#080f16, 0);
-    }
-  }
 
-  &__menu {
-    margin: 15px;
-    font-family: $font-text;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    align-content: center;
-    gap: 20px;
-
-    a {
-      color: $color-white;
+    &__menu {
+      margin: 15px;
+      font-family: $font-text;
+      text-align: center;
       text-decoration: none;
-    }
-
-    &--listone {
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      list-style: none;
-    }
+      align-items: center;
+      justify-content: space-around;
+      align-content: center;
+      gap: 20px;
 
-    &--listtwo {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      list-style: none;
-    }
-    &--copy {
-      width: 150px;
-      & .heart {
-        color: $primaryColor;
+      a {
+        color: $color-white;
+        text-decoration: none;
       }
 
-      &::first-line {
-        word-spacing: 100vw;
-        line-height: 2;
-      }
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    .footer {
-      &__menu {
-        width: 100vw;
-        margin-bottom: 25px;
+      &--listone {
         display: flex;
-        flex-direction: row-reverse;
-        align-items: baseline;
-        justify-content: space-evenly;
-        text-align: left;
-        &--listtwo {
-          order: -1;
+        flex-direction: column;
+        gap: 10px;
+        list-style: none;
+      }
+
+      &--listtwo {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style: none;
+      }
+      &--copy {
+        width: 150px;
+        & .heart {
+          color: $primaryColor;
+        }
+
+        &::first-line {
+          word-spacing: 100vw;
+          line-height: 2;
         }
       }
     }
-  }}}
+
+    @media screen and (min-width: 768px) {
+      .footer {
+        &__menu {
+          width: 100vw;
+          margin-bottom: 25px;
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: baseline;
+          justify-content: space-evenly;
+          text-align: left;
+          &--listtwo {
+            order: -1;
+          }
+        }
+      }
+    }
+  }
+}
