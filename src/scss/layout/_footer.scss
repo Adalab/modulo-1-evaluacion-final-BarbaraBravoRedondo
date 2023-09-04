@@ -16,7 +16,7 @@
   }
 
   &__button:hover {
-    animation: pulse 1.5s ease-in-out;
+    animation: pulse 1.5s ease-in-out;}
 
     @keyframes pulser {
       0% {
@@ -37,8 +37,8 @@
         background-color: yellow;
         opacity: 1;
         transform: scale(1, 2, 5);
-      }
-    }
+      }}
+    
 
     &__menu {
       margin: 15px;
@@ -100,4 +100,4 @@
       }
     }
   }
-}
+
