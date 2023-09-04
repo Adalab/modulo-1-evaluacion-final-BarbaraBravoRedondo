@@ -9,10 +9,10 @@ This consists of the creation of the structure and design of a website, "SHARE B
 Its structure consists of:
 1. HEAD HTML
 2. BODY
-*Header
-*Hero
-*Main (Section-green & Section-white)
-*Footer
+* eader
+* Hero
+* Main (Section-green & Section-white)
+* Footer
 
 Structured in HTML and designed with SCSS, both organized and divided into different parts in order to work in parts.
 ## INDUCTION:
